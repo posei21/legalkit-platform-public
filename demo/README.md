@@ -1,9 +1,5 @@
 # Demo
 
-If the MP4 links in GitHub show errors, use the GitHub Pages demo instead:
-
-https://posei21.github.io/legalkit-platform-public/
-
 ## Screenshots
 
 ![Homepage](stills/ui_01_homepage.png)
@@ -16,18 +12,8 @@ https://posei21.github.io/legalkit-platform-public/
 
 ![Dashboard](stills/auth_05_dashboard.png)
 
-## Clips (GIF previews)
+## Videos
 
-![Admin settings](gifs/video_01_admin-LegalKit-Admin-Settings-page-loads-and-shows-header-chromium.gif)
+The automated Playwright recordings we had are not usable (they missed key UI states like verification).
 
-![Frontend policy page](gifs/video_02_frontend-Frontend-Policy-R-20e74-policy-showcase-page-exists-chromium.gif)
-
-![Gutenberg block](gifs/video_03_blocks-Gutenberg-Blocks-Policy-block-renders-on-frontend-chromium.gif)
-
-![Plugin UX](gifs/video_04_plugin-ux-LegalKit-Plugin--fa1cd-ard-loads-without-JS-errors-chromium.gif)
-
-![Setup wizard](gifs/video_05_admin-LegalKit-Admin-Setup-wizard-page-loads-chromium.gif)
-
-![Plugin modal](gifs/video_06_plugin-ux-LegalKit-Plugin--43723-modal-opens-on-button-click-chromium.gif)
-
-MP4 downloads are in [demo/mp4/](mp4/).
+Next: re-shoot clean clips with a manual screen recording flow (or a dedicated Playwright demo script that waits for the verified state).
