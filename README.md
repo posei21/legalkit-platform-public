@@ -1,17 +1,9 @@
-# LegalKit Platform (Public Redacted)
+# LegalKit (public demo)
 
-This repository is a **public, redacted mirror** of the private `legalkit-platform` repo.
+This is a public, code-free version of a private project I built for fun.
 
-Goals:
-- Preserve commit history (authors/timestamps/messages)
-- Remove proprietary source code and implementation details
-- Publish demo screenshots/videos
+- The Git commit history is preserved.
+- Source code is intentionally not included.
+- Demo screenshots and short clips are in [`demo/`](demo/).
 
-## Demo
-See [`demo/`](demo/).
-
-## Proofs Archive
-Historical UI proof screenshots live under [`docs/proofs/`](docs/proofs/).
-
-## What's Redacted
-Nearly all non-demo content has been removed from history to avoid leaking private code.
+Landing page: https://unbound-labs.com
