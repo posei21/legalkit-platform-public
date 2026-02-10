@@ -2,6 +2,10 @@
 
 GIF previews render inline on GitHub. Click any GIF to open the full MP4.
 
+## Full Walkthrough
+
+[![Full Walkthrough](previews/2026-02-10_full-walkthrough.gif)](videos/2026-02-10_full-walkthrough.mp4)
+
 ## Live Install (unbound-labs.com)
 
 [![Live Install](previews/2026-02-10_live-unbound.gif)](videos/2026-02-10_live-unbound.mp4)
