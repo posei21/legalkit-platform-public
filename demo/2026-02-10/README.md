@@ -2,6 +2,10 @@
 
 GIF previews render inline on GitHub. Click any GIF to open the full MP4.
 
+## Live Install (unbound-labs.com)
+
+[![Live Install](previews/2026-02-10_live-unbound.gif)](videos/2026-02-10_live-unbound.mp4)
+
 ## Scanner
 
 [![Scanner](previews/2026-02-10_scanner.gif)](videos/2026-02-10_scanner.mp4)
@@ -17,4 +21,3 @@ GIF previews render inline on GitHub. Click any GIF to open the full MP4.
 ## Integrate
 
 [![Integrate](previews/2026-02-10_integrate.gif)](videos/2026-02-10_integrate.mp4)
-
