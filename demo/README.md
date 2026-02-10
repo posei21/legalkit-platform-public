@@ -30,4 +30,4 @@ https://posei21.github.io/legalkit-platform-public/
 
 ![Plugin modal](gifs/video_06_plugin-ux-LegalKit-Plugin--43723-modal-opens-on-button-click-chromium.gif)
 
-MP4 downloads are in [](mp4/).
+MP4 downloads are in [demo/mp4/](mp4/).
