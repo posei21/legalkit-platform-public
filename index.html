@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LegalKit Demo</title>
+  <style>
+    :root { --bg:#0b0e14; --fg:#e8e8e8; --muted:#a8b0c0; --card:#121828; --line:#222b3d; --link:#8fd3ff; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: radial-gradient(1200px 600px at 20% 0%, #132145 0%, var(--bg) 55%); color: var(--fg); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display:flex; flex-direction:column; gap:10px; margin-bottom: 22px; }
+    h1 { font-size: 28px; line-height: 1.1; margin: 0; letter-spacing: .2px; }
+    .sub { color: var(--muted); margin: 0; }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
+    .card h2 { margin: 0 0 8px; font-size: 16px; color: #d9e2ff; }
+    video { width: 100%; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+    img { width:100%; border-radius: 12px; border: 1px solid var(--line); }
+    .row { display:flex; gap:12px; flex-wrap: wrap; margin-top: 10px; }
+    .pill { padding: 8px 10px; border-radius: 999px; border: 1px solid var(--line); background: rgba(0,0,0,.2); color: var(--muted); font-size: 13px; }
+    footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>LegalKit Demo</h1>
+      <p class="sub">Code is private. This page is just demo media hosted on GitHub Pages.</p>
+      <div class="row">
+        <span class="pill">Repo: <a href="https://github.com/posei21/legalkit-platform-public">posei21/legalkit-platform-public</a></span>
+        <span class="pill">Landing page: <a href="https://unbound-labs.com">unbound-labs.com</a></span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Homepage</h2>
+        <img src="demo/stills/ui_01_homepage.png" alt="Homepage" />
+      </section>
+      <section class="card">
+        <h2>Scanner Results</h2>
+        <img src="demo/stills/ui_02_scanner-results.png" alt="Scanner results" />
+      </section>
+
+      <section class="card">
+        <h2>Consent Demo</h2>
+        <img src="demo/stills/ui_03_consent-demo.png" alt="Consent demo" />
+      </section>
+      <section class="card">
+        <h2>Privacy Policy Preview</h2>
+        <img src="demo/stills/ui_04_privacy-policy-preview.png" alt="Privacy policy preview" />
+      </section>
+
+      <section class="card">
+        <h2>Admin Settings (clip)</h2>
+        <video controls playsinline preload="metadata">
+          <source src="demo/mp4/video_01_admin-LegalKit-Admin-Settings-page-loads-and-shows-header-chromium.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section class="card">
+        <h2>Setup Wizard (clip)</h2>
+        <video controls playsinline preload="metadata">
+          <source src="demo/mp4/video_05_admin-LegalKit-Admin-Setup-wizard-page-loads-chromium.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section class="card">
+        <h2>Plugin Modal (clip)</h2>
+        <video controls playsinline preload="metadata">
+          <source src="demo/mp4/video_06_plugin-ux-LegalKit-Plugin--43723-modal-opens-on-button-click-chromium.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section class="card">
+        <h2>Gutenberg Block (clip)</h2>
+        <video controls playsinline preload="metadata">
+          <source src="demo/mp4/video_03_blocks-Gutenberg-Blocks-Policy-block-renders-on-frontend-chromium.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </div>
+
+    <footer>
+      <p>Note: GitHub's <code>raw.githubusercontent.com</code> serves MP4s as <code>application/octet-stream</code> (often breaks playback in browsers). GitHub Pages serves them correctly as <code>video/mp4</code>.</p>
+    </footer>
+  </div>
+</body>
+</html>
