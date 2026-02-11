@@ -1,54 +1,27 @@
-# LegalKit Demos
+# LegalKit Demo (One Canonical Flow)
 
-GitHub renders GIFs inline. Click the GIF to open the full MP4.
+This repo has one primary demo. Click the GIF to open the full MP4.
 
-## 1) Hero (under 1 min)
+[![LegalKit Hero Demo](hero/hero.gif)](hero/hero.mp4)
 
-[![Hero demo](hero/hero.gif)](hero/hero.mp4)
+What this single take demonstrates:
+- Scan `https://www.unbound-labs.com`
+- Review detected compliance issues
+- Apply one-click remediation
+- Manually enter company/privacy details in the generator
+- Generate policy output
+- Move through deploy checklist statuses
+- Validate live consent persistence on reload
 
-What it shows:
-- Full LegalKit pipeline on `https://www.unbound-labs.com`
-- Scan -> issue review -> one-click remediation -> manual company/privacy inputs -> policy generation -> deploy checklist
-- Live domain check confirms consent banner behavior persists after reload
+Proof frames from that same hero take:
 
-Hero proof frames:
+1. Before scan (URL entered)
+![Before Scan](hero/proof_01_before_scan.png)
 
-Before scan input
-![Before scan](stills/hero_before_scan.png)
+2. Manual generator inputs filled
+![Manual Inputs](hero/proof_02_after_manual_inputs.png)
 
-After manual policy details entered
-![After verify](stills/hero_after_verify.png)
+3. Live reload without banner (consent persisted)
+![Live Reload No Banner](hero/proof_03_live_reload_no_banner.png)
 
-After live reload (consent persisted)
-![After live reload](stills/hero_after_live_reload.png)
-
-## 2) Core Flow Demos
-
-Scanner
-[![Scanner](flows/scanner.gif)](flows/scanner.mp4)
-
-Wizard
-[![Wizard](flows/wizard.gif)](flows/wizard.mp4)
-
-Consent
-[![Consent](flows/consent.gif)](flows/consent.mp4)
-
-Integrate
-[![Integrate](flows/integrate.gif)](flows/integrate.mp4)
-
-Live Install
-[![Live Install](flows/live-unbound.gif)](flows/live-unbound.mp4)
-
-Full Walkthrough
-[![Full Walkthrough](flows/full-walkthrough.gif)](flows/full-walkthrough.mp4)
-
-## 3) Product Screenshots
-
-![Homepage](stills/ui_01_homepage.png)
-![Scanner Results](stills/ui_02_scanner-results.png)
-![Consent Demo](stills/ui_03_consent-demo.png)
-![Policy Preview](stills/ui_04_privacy-policy-preview.png)
-
-## Archive
-
-Older notes: `demo/more/2026-02-10.md`
+Archive: `demo/archive/`
