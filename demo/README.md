@@ -7,10 +7,9 @@ GitHub renders GIFs inline. Click the GIF to open the full MP4.
 [![Hero demo](hero/hero.gif)](hero/hero.mp4)
 
 What it shows:
-- Scan flow on `unbound-labs.com` (URL entry -> scan -> findings)
-- One-click fix queued from the scanner report
-- Install verification with green checks (`Snippet detected`, `Site ID matches`)
-- Live banner on `unbound-labs.com` plus persistence after reload
+- Full LegalKit pipeline on `https://www.unbound-labs.com`:
+- Scan -> issue review -> one-click remediation -> policy generation -> deploy checklist
+- Live domain check confirms consent banner behavior persists after reload
 
 Hero proof frames:
 
