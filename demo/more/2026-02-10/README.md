@@ -2,9 +2,9 @@
 
 GIF previews render inline on GitHub. Click any GIF to open the full MP4.
 
-## Hero (30s)
+## Hero
 
-[![Hero](previews/2026-02-10_hero.gif)](videos/2026-02-10_hero.mp4)
+The current hero demo lives in `demo/hero/`.
 
 ## Full Walkthrough
 
