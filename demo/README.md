@@ -7,8 +7,8 @@ GitHub renders GIFs inline. Click the GIF to open the full MP4.
 [![Hero demo](hero/hero.gif)](hero/hero.mp4)
 
 What it shows:
-- Full LegalKit pipeline on `https://www.unbound-labs.com`:
-- Scan -> issue review -> one-click remediation -> policy generation -> deploy checklist
+- Full LegalKit pipeline on `https://www.unbound-labs.com`
+- Scan -> issue review -> one-click remediation -> manual company/privacy inputs -> policy generation -> deploy checklist
 - Live domain check confirms consent banner behavior persists after reload
 
 Hero proof frames:
@@ -16,7 +16,7 @@ Hero proof frames:
 Before scan input
 ![Before scan](stills/hero_before_scan.png)
 
-After install verification
+After manual policy details entered
 ![After verify](stills/hero_after_verify.png)
 
 After live reload (consent persisted)
