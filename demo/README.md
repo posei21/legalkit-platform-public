@@ -7,8 +7,9 @@ GitHub renders GIFs inline. Click the GIF to open the full MP4.
 [![Hero demo](hero/hero.gif)](hero/hero.mp4)
 
 What it shows:
-- Consent-driven script blocking: blocked -> loaded -> blocked again
-- Live banner on `unbound-labs.com`, plus persistence after reload
+- Scan flow on `unbound-labs.com` (URL entry -> scan -> findings)
+- One-click fix queued from the scanner report
+- Live banner on `unbound-labs.com` plus persistence after reload
 
 ## 2) Core Flow Demos
 
