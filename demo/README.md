@@ -11,6 +11,7 @@ What this single take demonstrates:
 - Manually enter company/privacy details in the generator
 - Generate policy output
 - Move through deploy checklist statuses
+- Open the hosted privacy policy URL generated for this site
 - Validate live consent persistence on reload
 
 Proof frames from that same hero take:
@@ -18,7 +19,7 @@ Proof frames from that same hero take:
 1. Before scan (URL entered)
 ![Before Scan](hero/proof_01_before_scan.png)
 
-2. Manual generator inputs filled
+2. Hosted policy page generated + live
 ![Manual Inputs](hero/proof_02_after_manual_inputs.png)
 
 3. Live reload without banner (consent persisted)
