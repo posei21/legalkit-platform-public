@@ -1,32 +1,25 @@
-# LegalKit Demo (One Canonical Flow)
+# LegalKit Demo
 
-This repo has one primary demo. Click the GIF to open the full MP4.
+One end-to-end product demo using `www.unbound-labs.com`.
 
-[![LegalKit Hero Demo](hero/hero.gif)](hero/hero.mp4)
+[Watch the demo video (MP4)](demo.mp4)
 
-What this single take demonstrates:
-- Scan `https://www.unbound-labs.com`
-- Review detected compliance issues
-- Apply one-click remediation
-- Manually enter company/privacy details in the generator
-- Generate policy output
-- Move through deploy checklist statuses
-- Open the hosted privacy policy URL generated for this site
-- Validate live consent persistence on reload
-- Confirm live policy pages on the real site:
-  - `https://www.unbound-labs.com/privacy`
-  - `https://www.unbound-labs.com/terms`
-  - `https://www.unbound-labs.com/cookies`
+## Screenshots
 
-Proof frames from that same hero take:
+![Scan Input](screenshots/01_scan_input.png)
+The workflow starts by scanning `https://www.unbound-labs.com` and detecting services that require consent.
 
-1. Before scan (URL entered)
-![Before Scan](hero/proof_01_before_scan.png)
+![Deploy Status](screenshots/02_deploy_status.png)
+After generation, the deploy checklist confirms hosted policies, live banner, and active monitoring.
 
-2. Hosted policy page generated + live
-![Manual Inputs](hero/proof_02_after_manual_inputs.png)
+![Live Banner](screenshots/03_live_banner.png)
+The live site shows the consent banner once, then stores consent after acceptance.
 
-3. Live reload without banner (consent persisted)
-![Live Reload No Banner](hero/proof_03_live_reload_no_banner.png)
+![Live Privacy Policy](screenshots/04_live_privacy.png)
+The deployed privacy policy is live at `https://www.unbound-labs.com/privacy`.
 
-Archive: `demo/archive/`
+![Live Terms](screenshots/05_live_terms.png)
+The deployed terms page is live at `https://www.unbound-labs.com/terms`.
+
+![Live Cookies](screenshots/06_live_cookies.png)
+The deployed cookie policy is live at `https://www.unbound-labs.com/cookies`.
