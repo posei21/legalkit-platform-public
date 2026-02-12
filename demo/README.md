@@ -13,6 +13,10 @@ What this single take demonstrates:
 - Move through deploy checklist statuses
 - Open the hosted privacy policy URL generated for this site
 - Validate live consent persistence on reload
+- Confirm live policy pages on the real site:
+  - `https://www.unbound-labs.com/privacy`
+  - `https://www.unbound-labs.com/terms`
+  - `https://www.unbound-labs.com/cookies`
 
 Proof frames from that same hero take:
 
