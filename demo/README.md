@@ -1,29 +1,15 @@
 # LegalKit Demo
 
-Two high-resolution demo loops using `www.unbound-labs.com`.
+One end-to-end product demo using `www.unbound-labs.com`.
 
-## Demo 1: Scan to Deploy
+![LegalKit Demo](demo.gif)
 
-<video src="demo_pipeline.mp4" autoplay loop muted playsinline controls width="100%"></video>
-
-Shows the main product pipeline:
+This demo shows:
 - scan website services
 - review compliance findings
-- generate policies
-- move to deploy checklist
-
-## Demo 2: Live Site Verification
-
-<video src="demo_live.mp4" autoplay loop muted playsinline controls width="100%"></video>
-
-Shows the deployed result on the real site:
-- consent banner appears and stores consent
-- live policy routes are available:
-  - `/privacy`
-  - `/terms`
-  - `/cookies`
-
-If autoplay is blocked by your browser, press play once and loop continues.
+- generate and deploy policies
+- verify consent behavior on the live site
+- confirm live policy routes: `/privacy`, `/terms`, `/cookies`
 
 ## Screenshots
 
