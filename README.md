@@ -1,11 +1,10 @@
-# LegalKit (public demo)
+# LegalKit Public Demo
 
-This is a public, code-free snapshot of a private project I built for fun.
+Public demo mirror of a private build.
 
 - Commit history is preserved.
-- Source code is intentionally not included.
-- Demo media lives in `demo/` with two focused demo loops + screenshots.
+- Private source code is intentionally excluded.
+- End-to-end product demo and screenshots are in `demo/`.
 
-Landing page: https://unbound-labs.com
-
-Start here: `demo/README.md`
+Landing page: https://unbound-labs.com  
+Demo page: `demo/README.md`

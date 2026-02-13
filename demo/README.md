@@ -1,32 +1,30 @@
 # LegalKit Demo
 
-One end-to-end product demo using `www.unbound-labs.com`.
+End-to-end flow using `https://www.unbound-labs.com`.
 
 ![LegalKit Demo](demo.gif)
 
-This demo shows:
-- scan website services
-- review compliance findings
-- generate and deploy policies
-- verify consent behavior on the live site
-- confirm live policy routes: `/privacy`, `/terms`, `/cookies`
+## What this shows
 
-## Screenshots
+- Scan `unbound-labs.com` for tracked services.
+- Review detected compliance gaps.
+- Generate and deploy policy documents.
+- Confirm live consent banner behavior.
+- Verify hosted policy routes are live.
+
+## Key screenshots
 
 ![Scan Input](screenshots/01_scan_input.png)
-The workflow starts by scanning `https://www.unbound-labs.com` and detecting services that require consent.
+Scan starts with the target site and service detection.
 
 ![Deploy Status](screenshots/02_deploy_status.png)
-After generation, the deploy checklist confirms hosted policies, live banner, and active monitoring.
+Deploy checklist confirms hosted docs, banner setup, and monitoring.
 
 ![Live Banner](screenshots/03_live_banner.png)
-The live site shows the consent banner once, then stores consent after acceptance.
+Live site after deploy with consent controls visible.
 
 ![Live Privacy Policy](screenshots/04_live_privacy.png)
-The deployed privacy policy is live at `https://www.unbound-labs.com/privacy`.
-
-![Live Terms](screenshots/05_live_terms.png)
-The deployed terms page is live at `https://www.unbound-labs.com/terms`.
+Hosted privacy policy generated from scan + form inputs.
 
 ![Live Cookies](screenshots/06_live_cookies.png)
-The deployed cookie policy is live at `https://www.unbound-labs.com/cookies`.
+Hosted cookie policy route live on production.
