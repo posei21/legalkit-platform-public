@@ -1,23 +1,25 @@
 # LegalKit Demo
 
-Full end-to-end flow using `https://www.unbound-labs.com`.
+Full walkthrough of the scan-to-compliance pipeline using `https://www.unbound-labs.com`.
+This run includes compliance workflow plus hosted **Privacy**, **Terms**, and **Cookies** policy verification.
 
 ![LegalKit Demo](demo.gif)
 
 [Download MP4](demo.mp4)
 
-## What this shows
+## Flow (in order)
 
-- Scan `www.unbound-labs.com` and detect compliance gaps.
-- Queue quick fixes and continue through policy generation.
-- Deploy hosted policy routes and banner setup.
-- Verify live consent banner behavior on production.
-- Verify hosted policy routes are live: Privacy, **Terms**, and Cookies.
+1. Scan `www.unbound-labs.com` and detect compliance gaps.
+2. Review issues and queue one-click remediation.
+3. Generate policy content from scan context.
+4. Complete deploy/compliance steps in the wizard.
+5. Verify hosted policy routes: Privacy, **Terms**, Cookies.
+6. Verify live consent behavior on production.
 
 ## Key screenshots
 
 ![Scan Input](screenshots/01_scan_input.png)
-Scan starts with the target site and service detection.
+Scan begins with target site input and service detection.
 
 ![Deploy Status](screenshots/02_deploy_status.png)
 Deploy checklist confirms hosted docs, banner setup, and monitoring.
@@ -29,7 +31,7 @@ Live site after deploy with consent controls visible.
 Hosted privacy policy generated from scan + form inputs.
 
 ![Live Terms of Service](screenshots/05_live_terms.png)
-Hosted terms page rendered and verified as part of the flow.
+Hosted Terms page rendered and verified in the flow.
 
 ![Live Cookies](screenshots/06_live_cookies.png)
 Hosted cookie policy route live on production.
