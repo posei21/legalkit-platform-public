@@ -3,65 +3,188 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LegalKit Demo</title>
+  <title>LegalKit Public Demo</title>
   <style>
-    :root { --bg:#0b0e14; --fg:#e8e8e8; --muted:#a8b0c0; --card:#121828; --line:#222b3d; --link:#8fd3ff; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: radial-gradient(1200px 600px at 20% 0%, #132145 0%, var(--bg) 55%); color: var(--fg); }
-    a { color: var(--link); text-decoration: none; }
+    :root {
+      --bg: #090d14;
+      --panel: #101827;
+      --panel-2: #0c1322;
+      --text: #edf2f7;
+      --muted: #9fb2c8;
+      --line: #1f2d46;
+      --accent: #77d0ff;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(1000px 500px at 10% -10%, #203965 0%, transparent 60%),
+        radial-gradient(900px 450px at 90% 0%, #1c2c4f 0%, transparent 60%),
+        var(--bg);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
-    header { display:flex; flex-direction:column; gap:10px; margin-bottom: 22px; }
-    h1 { font-size: 28px; line-height: 1.1; margin: 0; letter-spacing: .2px; }
-    .sub { color: var(--muted); margin: 0; }
-    .grid { display:grid; grid-template-columns: 1fr; gap: 14px; }
-    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .card { background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
-    .card h2 { margin: 0 0 8px; font-size: 16px; color: #d9e2ff; }
-    video { width: 100%; border-radius: 12px; border: 1px solid var(--line); background: #000; }
-    img { width:100%; border-radius: 12px; border: 1px solid var(--line); }
-    .row { display:flex; gap:12px; flex-wrap: wrap; margin-top: 10px; }
-    .pill { padding: 8px 10px; border-radius: 999px; border: 1px solid var(--line); background: rgba(0,0,0,.2); color: var(--muted); font-size: 13px; }
-    footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 18px 64px; }
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      background: linear-gradient(170deg, rgba(255,255,255,.05), rgba(255,255,255,.01));
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 5vw, 42px);
+      letter-spacing: 0.2px;
+    }
+    p { margin: 0; line-height: 1.5; }
+    .sub { color: var(--muted); max-width: 72ch; }
+    .links { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill {
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 13px;
+    }
+
+    .section {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      padding: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: 0.2px;
+    }
+    .section p { color: var(--muted); }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (min-width: 920px) {
+      .media-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--panel);
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 15px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      color: #d9e8ff;
+      font-weight: 600;
+    }
+    video, img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #000;
+    }
+
+    .shots {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    @media (min-width: 700px) {
+      .shots { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 980px) {
+      .shots { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    footer {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>LegalKit Demo</h1>
-      <p class="sub">Code is private. This page is just demo media hosted on GitHub Pages.</p>
-      <div class="row">
+  <main class="wrap">
+    <section class="hero">
+      <h1>LegalKit Public Demo</h1>
+      <p class="sub">
+        Public showcase page for product walkthrough media. This repo intentionally excludes private source code and focuses on visible outcomes.
+      </p>
+      <div class="links">
         <span class="pill">Repo: <a href="https://github.com/posei21/legalkit-platform-public">posei21/legalkit-platform-public</a></span>
-        <span class="pill">Landing page: <a href="https://unbound-labs.com">unbound-labs.com</a></span>
+        <span class="pill">Main site: <a href="https://unbound-labs.com">unbound-labs.com</a></span>
+        <span class="pill">Full demo notes: <a href="./demo/README.md">demo/README.md</a></span>
       </div>
-    </header>
+    </section>
 
-    <div class="grid">
-      <section class="card">
-        <h2>Homepage</h2>
-        <img src="demo/stills/ui_01_homepage.png" alt="Homepage" />
-      </section>
-      <section class="card">
-        <h2>Scanner Results</h2>
-        <img src="demo/stills/ui_02_scanner-results.png" alt="Scanner results" />
-      </section>
+    <section class="section">
+      <h2>Walkthrough Media</h2>
+      <p>Video and GIF coverage of the end-to-end compliance flow.</p>
+      <div class="media-grid">
+        <article class="card">
+          <h3>MP4 Walkthrough</h3>
+          <video controls preload="metadata" poster="./demo/screenshots/01_scan_input.png">
+            <source src="./demo/demo.mp4" type="video/mp4" />
+          </video>
+        </article>
+        <article class="card">
+          <h3>GIF Walkthrough</h3>
+          <img src="./demo/demo.gif" alt="LegalKit walkthrough GIF" loading="lazy" />
+        </article>
+      </div>
+    </section>
 
-      <section class="card">
-        <h2>Consent Demo</h2>
-        <img src="demo/stills/ui_03_consent-demo.png" alt="Consent demo" />
-      </section>
-      <section class="card">
-        <h2>Privacy Policy Preview</h2>
-        <img src="demo/stills/ui_04_privacy-policy-preview.png" alt="Privacy policy preview" />
-      </section>
-
-
-
-</div>
+    <section class="section">
+      <h2>Demo Shots</h2>
+      <p>Selected stills from scan, deploy, banner, and hosted policy pages.</p>
+      <div class="shots">
+        <article class="card">
+          <h3>Scan Input</h3>
+          <img src="./demo/screenshots/01_scan_input.png" alt="Scan input screen" loading="lazy" />
+        </article>
+        <article class="card">
+          <h3>Deploy Status</h3>
+          <img src="./demo/screenshots/02_deploy_status.png" alt="Deploy status screen" loading="lazy" />
+        </article>
+        <article class="card">
+          <h3>Live Banner</h3>
+          <img src="./demo/screenshots/03_live_banner.png" alt="Live banner screenshot" loading="lazy" />
+        </article>
+        <article class="card">
+          <h3>Live Privacy</h3>
+          <img src="./demo/screenshots/04_live_privacy.png" alt="Live privacy page" loading="lazy" />
+        </article>
+        <article class="card">
+          <h3>Live Terms</h3>
+          <img src="./demo/screenshots/05_live_terms.png" alt="Live terms page" loading="lazy" />
+        </article>
+        <article class="card">
+          <h3>Live Cookies</h3>
+          <img src="./demo/screenshots/06_live_cookies.png" alt="Live cookies page" loading="lazy" />
+        </article>
+      </div>
+    </section>
 
     <footer>
-      <p>Note: GitHub's <code>raw.githubusercontent.com</code> serves MP4s as <code>application/octet-stream</code> (often breaks playback in browsers). GitHub Pages serves them correctly as <code>video/mp4</code>.</p>
+      GitHub Pages serves MP4 with the proper MIME type, so in-page playback should work directly from this site.
     </footer>
-  </div>
+  </main>
 </body>
 </html>
