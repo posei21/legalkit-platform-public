@@ -3,9 +3,7 @@
 Full walkthrough of the scan-to-compliance pipeline using `https://www.unbound-labs.com`.
 This run includes compliance workflow plus hosted **Privacy**, **Terms**, and **Cookies** policy verification.
 
-![LegalKit Demo](demo.gif)
-
-[Download MP4](demo.mp4)
+[Download MP4 walkthrough](demo.mp4)
 
 ## Flow (in order)
 
