@@ -1,2 +1,4 @@
 .DS_Store
 local/
+*.prev.mp4
+*.prev.gif

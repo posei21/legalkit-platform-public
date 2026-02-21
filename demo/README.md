@@ -1,33 +1,37 @@
-# Demo
+# LegalKit Demo
 
-If the MP4 links in GitHub show errors, use the GitHub Pages demo instead:
+Full walkthrough of the scan-to-compliance pipeline using `https://www.unbound-labs.com`.
+This run includes compliance workflow plus hosted **Privacy**, **Terms**, and **Cookies** policy verification.
 
-https://posei21.github.io/legalkit-platform-public/
+![LegalKit Demo](demo.gif)
 
-## Screenshots
+[Download MP4](demo.mp4)
 
-![Homepage](stills/ui_01_homepage.png)
+## Flow (in order)
 
-![Scanner results](stills/ui_02_scanner-results.png)
+1. Scan `www.unbound-labs.com` and detect compliance gaps.
+2. Review issues and queue one-click remediation.
+3. Generate policy content from scan context.
+4. Complete deploy/compliance steps in the wizard.
+5. Verify hosted policy routes: Privacy, **Terms**, Cookies.
+6. Verify live consent behavior on production.
 
-![Consent demo](stills/ui_03_consent-demo.png)
+## Key screenshots
 
-![Privacy policy preview](stills/ui_04_privacy-policy-preview.png)
+![Scan Input](screenshots/01_scan_input.png)
+Scan begins with target site input and service detection.
 
-![Dashboard](stills/auth_05_dashboard.png)
+![Deploy Status](screenshots/02_deploy_status.png)
+Deploy checklist confirms hosted docs, banner setup, and monitoring.
 
-## Clips (GIF previews)
+![Live Banner](screenshots/03_live_banner.png)
+Live site after deploy with consent controls visible.
 
-![Admin settings](gifs/video_01_admin-LegalKit-Admin-Settings-page-loads-and-shows-header-chromium.gif)
+![Live Privacy Policy](screenshots/04_live_privacy.png)
+Hosted privacy policy generated from scan + form inputs.
 
-![Frontend policy page](gifs/video_02_frontend-Frontend-Policy-R-20e74-policy-showcase-page-exists-chromium.gif)
+![Live Terms of Service](screenshots/05_live_terms.png)
+Hosted Terms page rendered and verified in the flow.
 
-![Gutenberg block](gifs/video_03_blocks-Gutenberg-Blocks-Policy-block-renders-on-frontend-chromium.gif)
-
-![Plugin UX](gifs/video_04_plugin-ux-LegalKit-Plugin--fa1cd-ard-loads-without-JS-errors-chromium.gif)
-
-![Setup wizard](gifs/video_05_admin-LegalKit-Admin-Setup-wizard-page-loads-chromium.gif)
-
-![Plugin modal](gifs/video_06_plugin-ux-LegalKit-Plugin--43723-modal-opens-on-button-click-chromium.gif)
-
-MP4 downloads are in [demo/mp4/](mp4/).
+![Live Cookies](screenshots/06_live_cookies.png)
+Hosted cookie policy route live on production.
